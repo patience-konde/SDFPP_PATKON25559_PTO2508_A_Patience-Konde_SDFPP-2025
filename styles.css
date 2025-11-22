@@ -1,0 +1,736 @@
+/* General Reset */
+body {
+  max-width: 88%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: gray;
+}
+
+/* Main wrapper for the whole profile section */
+.main-profile {
+  width: 100%;
+  max-width: 1350px;
+  margin: 63px auto;
+  display: flex;
+  /* flex row for image + text */
+  align-items: stretch;
+  /* vertically center image and text */
+  gap: 2rem;
+  border-radius: 29px;
+  /* spacing between image and text */
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+}
+
+/* Profile image */
+.profile-image img {
+  object-fit: cover;
+  min-width: 18.75rem;
+  /* 300px */
+  max-width: 18.75rem;
+  /* 300px */
+  height: 280px;
+  border-radius: 1.5rem;
+  /* rounded corners */
+}
+
+/* Info box */
+.profile-info {
+  flex: 1;
+  /* take remaining space */
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Name */
+.profile-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 104%;
+  color: #000000;
+  margin: 0;
+}
+
+/* Role */
+.profile-role {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 151%;
+  color: #5c5c5c;
+  margin: 0;
+}
+
+/* Description */
+.profile-description {
+  margin-top: 1rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Proficiency + skills side by side */
+.proficiency-skills {
+  display: flex;
+  /* place them side by side */
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1420px;
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+
+.proficiency-section,
+.skills-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.proficiency-container {
+  width: 100%;
+  margin-left: 0;
+  text-align: left;
+}
+
+.proficiency-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.proficiency-levels {
+  width: 208px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.skill {
+  display: flex;
+  /* put text + bar in one line */
+  align-items: center;
+  /* vertical alignment */
+  justify-content: space-between;
+  /* push bar to the right */
+  gap: 1rem;
+  /* optional spacing */
+}
+
+.skill p {
+  margin: 0;
+  /* remove default spacing */
+  font-size: 1rem;
+  color: #111827;
+}
+
+/* Progress Bars */
+.progress-bar {
+  flex: 1;
+  /* take remaining space */
+  max-width: 200px;
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4a8b70;
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
+}
+
+/* Individual skill widths */
+.progress-fill.js {
+  width: 130px;
+}
+
+.progress-fill.tailwind {
+  width: 150px;
+}
+
+.progress-fill.node {
+  width: 100px;
+}
+
+.progress-fill.htmlcss {
+  width: 180px;
+}
+
+/*SKILLS SECTION 50% (right side)*/
+.skills-section {
+  background-color: #f9fafb;
+  padding: 2.5rem 1.5rem;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.skills-container {
+  width: 100%;
+  text-align: left;
+}
+
+.skills-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 33.88px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  /* vertical-align: left; */
+  margin-bottom: 1.5rem;
+  color: #111827;
+
+  /* Added properties */
+  width: 85px;
+  height: 51px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  /* Layout properties from your specs */
+  width: 100%;
+  height: auto;
+  gap: 19.36px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.skills-list li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  color: #374151;
+
+  background-color: #e5e7eb;
+  /* light gray badge */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Wrapper for proficiency + skills side by side */
+.proficiency-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Make them equal width */
+.proficiency-section,
+.skills-section {
+  flex: 1;
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #ffffff;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.projects-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 33.88px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+/* Grid layout */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns on desktop */
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.project-card {
+  position: relative;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* heart badge in top-right */
+.heart-badge {
+  position: absolute;
+  top: 8px;
+  /* distance from top */
+  right: 8px;
+  /* distance from right */
+  font-size: 16px;
+  background: #d76239;
+  transform: rotate(-45deg);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Other three columns (2nd, 3rd, 4th cards in each row) */
+.projects-container .project-card:nth-child(4n + 2),
+.projects-container .project-card:nth-child(4n + 3),
+.projects-container .project-card:nth-child(4n + 4) {
+  background-color: #e7f0ec;
+}
+
+.project-year {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000000;
+  width: 40px;
+  height: 24px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-style: poppins;
+}
+
+.project-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.project-brief,
+.project-tech,
+.project-resp {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* First project card only */
+.project-card:first-child {
+  background-color: #4a8b70;
+  color: #fff;
+  /* ensure text is readable on dark background */
+}
+
+/* Education Section */
+
+.education-tools-wrapper {
+  display: flex;
+  /* side by side */
+  flex-direction: row;
+  /* ensure horizontal layout */
+  align-items: stretch;
+  gap: 2rem;
+  max-height: auto;
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+.education-section {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.tools-section {
+  flex: 1;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.education-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+/* Education: vertical stack */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/*Each Card*/
+.education-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 936px;
+  min-height: 242px;
+  padding: 27px 21px;
+  gap: 1rem;
+  background: #e7f0ec;
+  /* lighter green for all cards */
+  border-radius: 29px;
+  color: #111827;
+  /* dark text for readability */
+  box-sizing: border-box;
+}
+
+/* Left column (date, role, company, info) */
+.education-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Right column (points list) */
+.education-right {
+  flex: 2;
+}
+
+/* Right column (points list) */
+.education-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* First education card only */
+.education-card:first-child {
+  background-color: #4a8b70;
+  color: #fff;
+  /* ensure text is readable on dark background */
+}
+
+.points {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 150%;
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.education-section,
+.tools-section {
+  flex: 1;
+}
+
+.education-tools-wrapper {
+  display: flex;
+  /* side by side */
+  flex-direction: row;
+  /* ensure horizontal layout */
+
+  align-items: stretch;
+  gap: 2rem;
+}
+
+/*TOOLS SECTION (right side)*/
+.tools-section {
+  flex: 1;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tools-category {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e7f0ec;
+  border-radius: 14px;
+  /* rounded corners */
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.tools-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #111827;
+}
+
+.tools-subtitle {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #000000;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 12px;
+  text-align: center;
+  transform: translatex(-50%);
+  top: -12px;
+  align-content: center;
+}
+
+.tools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.tools-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  color: #374151;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  /* pill shape */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/*EXPERIENCE SECTION*/
+.experience-wrapper {
+  display: flex;
+  /* side by side */
+  flex-direction: column;
+  /* ensure horizontal layout */
+  align-items: stretch;
+  gap: 2rem;
+  max-height: auto;
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.experience-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #111827;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  /* stack cards vertically */
+  gap: 2rem;
+}
+
+.experience-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* left column smaller, right column wider */
+  gap: 1.5rem;
+  background-color: #e7f0ec;
+  border: 2px solid #4a8b70;
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+/* Tag pill */
+.tag {
+  position: absolute;
+  top: 10px;
+  /* distance from top */
+  right: 10px;
+  /* distance from right */
+  background: #d76239;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 999px;
+  /* pill shape */
+  z-index: 10;
+}
+
+.experience-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #374151;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a8b70;
+}
+
+.roleName {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.companyName {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.info {
+  font-size: 14px;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.experience-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.points {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #374151;
+}
+
+.points li {
+  margin-bottom: 0.5rem;
+}
+
+/* First experience card only */
+.experience-card:first-child {
+  background-color: #4a8b70;
+  color: #fff;
+  /* ensure text is readable on dark background */
+}
+
+/*FOOTER SECTION*/
+.footer {
+  background-color: #d76239;
+  /* light background */
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  border-top: 2px solid #4a8b70;
+  /* subtle accent line */
+}
+
+.footer-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24.2px;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  color: #111827;
+  /* dark text */
+}
+
+.footer-contact p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  color: #374151;
+  /* medium gray */
+}
+
+.footer-contact a {
+  color: #dddddd;
+  /* accent color for links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .proficiency-skills,
+  .education-tools-wrapper {
+    flex-direction: column;
+  }
+
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .experience-card {
+        grid-template-columns: 1fr;
+    }
+    .main-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
